@@ -13,3 +13,5 @@
 `sass --watch main.scss:main.css --style compressed`
 
 `sass --watch main.scss:main.css --style expanded`
+
+`sass --watch main.scss:main.css --style expanded --source-map=none`

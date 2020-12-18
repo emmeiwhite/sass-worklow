@@ -3,6 +3,10 @@ $transition: 1px 0.4s ease;
 $boxShadow: 0 0 4px 4px #ccc;
 $basicFont: 0.9rem;
 $maxWidth: 1170px;
+$btnPadding: 0.5rem 1rem;
+
+// String selector
+
 body {
   color: $dark-color;
   div {
@@ -17,5 +21,31 @@ body {
 
   section {
     max-width: $basicFont;
+    button {
+      padding: $btnPadding;
+    }
   }
 }
+
+// Element Selector #{} | Data Types
+$rgb: rgb(15, 0, 0);
+$element: main-navigation;
+$list: 1px 1px 3px 3px #ccc, 2px 2px 3px 4px #777;
+
+header #{$element} {
+  width: $maxWidth;
+  color: $rgb;
+  box-shadow: $list;
+}
+
+section ##{$element} {
+  padding: $btnPadding;
+}
+
+section .#{$element} {
+  padding: $btnPadding;
+}
+
+header {
+}
+// Selector Completed

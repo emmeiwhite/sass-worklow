@@ -1,6 +1,31 @@
-body { color: #000; }
-body div { transition: 1px 0.4s ease; box-shadow: 0 0 4px 4px #ccc; font-size: 0.9rem; }
-body nav { max-width: 1170px; }
-body section { max-width: 0.9rem; }
+body {
+  color: #000;
+}
+body div {
+  transition: 1px 0.4s ease;
+  box-shadow: 0 0 4px 4px #ccc;
+  font-size: 0.9rem;
+}
+body nav {
+  max-width: 1170px;
+}
+body section {
+  max-width: 0.9rem;
+}
+body section button {
+  padding: 0.5rem 1rem;
+}
 
-/*# sourceMappingURL=home.css.map */
+header main-navigation {
+  width: 1170px;
+  color: #0f0000;
+  box-shadow: 1px 1px 3px 3px #ccc, 2px 2px 3px 4px #777;
+}
+
+section #main-navigation {
+  padding: 0.5rem 1rem;
+}
+
+section .main-navigation {
+  padding: 0.5rem 1rem;
+}
