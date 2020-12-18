@@ -2,12 +2,20 @@ $dark-color: #000;
 $transition: 1px 0.4s ease;
 $boxShadow: 0 0 4px 4px #ccc;
 $basicFont: 0.9rem;
-
+$maxWidth: 1170px;
 body {
   color: $dark-color;
   div {
     transition: $transition;
     box-shadow: $boxShadow;
     font-size: $basicFont;
+  }
+
+  nav {
+    max-width: $maxWidth;
+  }
+
+  section {
+    max-width: $basicFont;
   }
 }
