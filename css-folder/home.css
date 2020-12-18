@@ -39,3 +39,14 @@ section .main-navigation {
 #parent element .child2 {
   font-size: 0.9rem;
 }
+
+.parent .myselector .child, .parent .sign .child,
+.parent video .child,
+.parent img .child {
+  background: #0f0000;
+  font-size: 0.9rem;
+}
+
+.myselector {
+  line-height: 1.2;
+}
