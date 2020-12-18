@@ -79,9 +79,10 @@ $el: element;
 }
 
 // Trick: whereever we have our %shared in our code, it will be replaced by .myselector
+$list: elementOne, elementTwo, elementThree;
 
 .sign,
 video,
-img {
+img #{$list} {
   @extend %shared;
 }

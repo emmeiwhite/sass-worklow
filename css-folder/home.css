@@ -42,7 +42,8 @@ section .main-navigation {
 
 .parent .myselector .child, .parent .sign .child,
 .parent video .child,
-.parent img .child {
+.parent img elementOne .child,
+img .parent elementOne .child, .parent elementTwo .child, .parent elementThree .child {
   background: #0f0000;
   font-size: 0.9rem;
 }
