@@ -109,3 +109,5 @@ header #{$btnElement} {
   outline: none;
   @include btnProperties($btnWidth);
 }
+
+// Partials are scss files starting with _ underscore. Partials are files that are not converted into scss to css but imported in our main.scss file.
