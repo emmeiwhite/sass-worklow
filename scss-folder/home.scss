@@ -1,4 +1,4 @@
-$dark-color: #000;
+$darkColor: #000;
 $transition: 1px 0.4s ease;
 $boxShadow: 0 0 4px 4px #ccc;
 $basicFont: 0.9rem;
@@ -9,7 +9,7 @@ $mainColor: #fff;
 // String selector
 
 body {
-  color: $dark-color;
+  color: $darkColor;
   div {
     transition: $transition;
     box-shadow: $boxShadow;
@@ -53,7 +53,7 @@ section .#{$element} {
 $el: element;
 
 #parent #{$el} {
-  color: $dark-color;
+  color: $darkColor;
   .child1 {
     color: $mainColor;
   }
@@ -85,4 +85,25 @@ $list: elementOne, elementTwo, elementThree;
 video,
 img #{$list} {
   @extend %shared;
+}
+
+// Mixins are parsed before our scss is converted into the CSS. So, we can pass scss into our mixin
+
+$btnElement: button;
+// @mixin btnProperties {
+//   padding: $btnPadding;
+//   background-color: $darkColor;
+//   color: $mainColor;
+// }
+
+@mixin btnProperties {
+  li {
+    padding: $btnPadding;
+    background-color: $darkColor;
+    color: $mainColor;
+  }
+}
+
+header #{$btnElement} {
+  @include btnProperties();
 }

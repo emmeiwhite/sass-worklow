@@ -14,9 +14,11 @@
 
 `sass --watch main.scss:main.css --style expanded`
 
-`sass --watch main.scss:main.css --style expanded --source-map=none`
+`sass --watch main.scss:main.css --style expanded --sourcemap=none`
 
 ## Inheritance
 
 - selector inheritance
 - property inheritance
+
+# Mixins: Just like functions
