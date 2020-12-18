@@ -1,42 +1,64 @@
 body {
-  color: #000; }
+  color: #000;
+}
 body div {
   transition: 1px 0.4s ease;
   box-shadow: 0 0 4px 4px #ccc;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+}
 body nav {
-  max-width: 1170px; }
+  max-width: 1170px;
+}
 body section {
-  max-width: 0.9rem; }
+  max-width: 0.9rem;
+}
 body section button {
-  padding: 0.5rem 1rem; }
+  padding: 0.5rem 1rem;
+}
 
 header main-navigation {
   width: 1170px;
   color: #0f0000;
-  box-shadow: 1px 1px 3px 3px #ccc, 2px 2px 3px 4px #777; }
+  box-shadow: 1px 1px 3px 3px #ccc, 2px 2px 3px 4px #777;
+}
 
 section #main-navigation {
-  padding: 0.5rem 1rem; }
+  padding: 0.5rem 1rem;
+}
 
 section .main-navigation {
-  padding: 0.5rem 1rem; }
+  padding: 0.5rem 1rem;
+}
 
 #parent element {
-  color: #000; }
+  color: #000;
+}
 #parent element .child1 {
-  color: #fff; }
+  color: #fff;
+}
 #parent element .child2 {
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+}
 
-.parent .myselector .child, .parent .sign .child, .parent video .child, .parent img elementOne .child, img .parent elementOne .child, .parent elementTwo .child, .parent elementThree .child {
+.parent .myselector .child, .parent .sign .child,
+.parent video .child,
+.parent img elementOne .child,
+img .parent elementOne .child, .parent elementTwo .child, .parent elementThree .child {
   background: #0f0000;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+}
 
 .myselector {
-  line-height: 1.2; }
+  line-height: 1.2;
+}
 
-header button li {
+header button {
+  border: none;
+  outline: none;
   padding: 0.5rem 1rem;
   background-color: #000;
-  color: #fff; }
+  color: #fff;
+  width: 100px;
+}
+
+/*# sourceMappingURL=home.css.map */

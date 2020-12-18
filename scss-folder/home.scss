@@ -96,14 +96,16 @@ $btnElement: button;
 //   color: $mainColor;
 // }
 
-@mixin btnProperties {
-  li {
-    padding: $btnPadding;
-    background-color: $darkColor;
-    color: $mainColor;
-  }
+$btnWidth: 100px;
+@mixin btnProperties($width) {
+  padding: $btnPadding;
+  background-color: $darkColor;
+  color: $mainColor;
+  width: $width;
 }
 
 header #{$btnElement} {
-  @include btnProperties();
+  border: none;
+  outline: none;
+  @include btnProperties($btnWidth);
 }
