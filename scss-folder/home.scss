@@ -4,6 +4,7 @@ $boxShadow: 0 0 4px 4px #ccc;
 $basicFont: 0.9rem;
 $maxWidth: 1170px;
 $btnPadding: 0.5rem 1rem;
+$mainColor: #fff;
 
 // String selector
 
@@ -46,6 +47,18 @@ section .#{$element} {
   padding: $btnPadding;
 }
 
-header {
-}
 // Selector Completed
+
+// INHERITANCE: 1) selector inheritance and 2) property inheritance
+$el: element;
+
+#parent #{$el} {
+  color: $dark-color;
+  .child1 {
+    color: $mainColor;
+  }
+
+  .child2 {
+    font-size: $basicFont;
+  }
+}

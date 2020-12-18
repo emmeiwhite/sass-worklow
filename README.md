@@ -15,3 +15,8 @@
 `sass --watch main.scss:main.css --style expanded`
 
 `sass --watch main.scss:main.css --style expanded --source-map=none`
+
+## Inheritance
+
+- selector inheritance
+- property inheritance

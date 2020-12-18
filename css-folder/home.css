@@ -29,3 +29,13 @@ section #main-navigation {
 section .main-navigation {
   padding: 0.5rem 1rem;
 }
+
+#parent element {
+  color: #000;
+}
+#parent element .child1 {
+  color: #fff;
+}
+#parent element .child2 {
+  font-size: 0.9rem;
+}
