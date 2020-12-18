@@ -1,5 +1,9 @@
 $dark-color: #000;
+$transition: 1px 0.4s ease;
 
 body {
   color: $dark-color;
+  div {
+    transition: $transition;
+  }
 }
