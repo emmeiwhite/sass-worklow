@@ -1,4 +1,5 @@
 // Mixins
+$element: button;
 
 @mixin boxShadow($arg1...) {
   box-shadow: $arg1;
@@ -6,4 +7,25 @@
 
 section {
   @include boxShadow(2px 2px 2px 3px #ccc, 4px 4px 4px 5px #777777);
+}
+
+// Keyframe Animation Mixin
+
+@mixin keyframe1($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+// {} in the below code will be considered as the content block for our mixin
+@include keyframe1(myAnim) {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }

@@ -2,4 +2,15 @@ section {
   box-shadow: 2px 2px 2px 3px #ccc, 4px 4px 4px 5px #777777;
 }
 
+@keyframes myAnim {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
