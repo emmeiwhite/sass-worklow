@@ -61,4 +61,14 @@ header button {
   width: 100px;
 }
 
+/* Practice Mixins*/
+.btn:hover {
+  background-color: #777;
+  border: 0 0 4px 4px #ccc;
+}
+
+div {
+  box-shadow: 0px 0px 5px 5px #ccc;
+}
+
 /*# sourceMappingURL=home.css.map */
