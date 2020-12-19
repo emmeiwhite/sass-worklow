@@ -1,0 +1,14 @@
+$primary: blue;
+$secondary: #ccc;
+$string: bolder;
+
+@mixin backgroundProperties($bgColor, $bgImage) {
+  background-color: $bgColor;
+  background-image: $bgImage;
+}
+
+aside {
+  width: 25%;
+  height: auto;
+  background-color: $secondary;
+}
