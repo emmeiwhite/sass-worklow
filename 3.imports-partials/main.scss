@@ -1,0 +1,20 @@
+@import "reset.css";
+@import "_mixins.scss";
+
+nav {
+  @include boxShadow(1px 1px 1px #ccc, 0 0 4px #777);
+}
+
+section {
+  @include mainTransition(all 0.2s ease-in);
+}
+
+@include keyframes(myAnimatin) {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

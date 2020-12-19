@@ -1,0 +1,21 @@
+$mainPadding: 0.5rem 1rem;
+
+@mixin boxShadow($shadow...) {
+  box-shadow: $shadow;
+}
+
+@mixin mainTransition($transition...) {
+  transition: $transition;
+}
+
+@mixin keyframes($myAnim) {
+  @keyframes #{$myAnim} {
+    @content;
+  }
+}
+
+// div.content {
+//   width: 1200px;
+//   height: auto;
+//   padding: $mainPadding;
+// }
