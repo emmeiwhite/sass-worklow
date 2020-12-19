@@ -1,0 +1,9 @@
+// Mixins
+
+@mixin boxShadow($arg1...) {
+  box-shadow: $arg1;
+}
+
+section {
+  @include boxShadow(2px 2px 2px 3px #ccc, 4px 4px 4px 5px #777777);
+}

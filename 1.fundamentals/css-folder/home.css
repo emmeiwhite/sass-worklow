@@ -68,7 +68,7 @@ header button {
 }
 
 div {
-  box-shadow: 0px 0px 5px 5px #ccc;
+  box-shadow: 0px 0px 5px 5px #ccc, 3px 3px 3px 3px green;
 }
 
 /*# sourceMappingURL=home.css.map */

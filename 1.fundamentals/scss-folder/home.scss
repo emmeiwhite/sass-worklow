@@ -121,11 +121,12 @@ header #{$btnElement} {
   @include btnHoverEffect(#777, 1px solid orange);
 }
 
-@mixin boxShadow($boxShadow) {
+// Passing Multiple properties using ...
+@mixin boxShadow($boxShadow...) {
   box-shadow: $boxShadow;
 }
 
 div {
-  @include boxShadow(0px 0px 5px 5px #ccc);
+  @include boxShadow(0px 0px 5px 5px #ccc, 3px 3px 3px 3px green);
 }
 // Partials are scss files starting with _ underscore. Partials are files that are not converted into scss to css but imported in our main.scss file.
