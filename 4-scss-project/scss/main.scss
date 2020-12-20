@@ -35,10 +35,10 @@ body {
   font-weight: map-get($font-weights, bold);
 }
 
-main {
+.main {
   width: 80%;
   margin: 0 auto;
-  p {
+  #{&}__paragraph {
     padding: 1rem 0;
   }
 }
