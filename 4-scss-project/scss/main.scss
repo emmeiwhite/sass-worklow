@@ -34,3 +34,11 @@ body {
   background-color: var(--primary-color);
   font-weight: map-get($font-weights, bold);
 }
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  p {
+    padding: 1rem 0;
+  }
+}
