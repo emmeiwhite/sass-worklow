@@ -5,6 +5,12 @@
   @return map-get($font-weights, $weight-name);
 }
 
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 html {
   color: $mainColor;
   box-shadow: $boxShadow;
@@ -28,6 +34,7 @@ body {
 .main {
   width: 80%;
   margin: 0 auto;
+  color: $colorBlack;
   #{&}__paragraph {
     padding: 1rem 0;
 
@@ -36,4 +43,6 @@ body {
       cursor: pointer;
     }
   }
+
+  @include flexCenter();
 }
