@@ -1,10 +1,13 @@
 @import "./reset";
-// SCSS is the super-set of CSS. So any valid CSS is valid SCSS
-$dark: #000;
-$white: #fff;
+@import "./variables";
+
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
 
 html {
-  color: $white;
+  color: $mainColor;
+  box-shadow: $boxShadow;
 }
 
 @mixin boxShadow($arg1) {
@@ -12,28 +15,14 @@ html {
 }
 
 section {
-  @include boxShadow(2px 2px 4px 4px #cccccc);
+  @include boxShadow($boxShadow);
 }
 
 // Variables: Let's first see CSS variables
 
-:root {
-  --primary-color: #777;
-  --font-size: 16px;
-  --font-weight: 300;
-}
-
-// maps: key value pairs
-
-$font-weights: (
-  "regular": 400,
-  "medium": 500,
-  "bold": 700,
-);
-
 body {
-  background-color: var(--primary-color);
-  font-weight: map-get($font-weights, bold);
+  background-color: $mainColor;
+  font-weight: weight(bold);
 }
 
 .main {
@@ -43,7 +32,7 @@ body {
     padding: 1rem 0;
 
     &:hover {
-      color: orange;
+      color: $btnSecondary;
       cursor: pointer;
     }
   }

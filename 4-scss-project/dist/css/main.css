@@ -6,20 +6,15 @@
 
 html {
   color: #fff;
+  box-shadow: 2px 0 4px 4px #ccc;
 }
 
 section {
-  box-shadow: 2px 2px 4px 4px #cccccc;
-}
-
-:root {
-  --primary-color: #777;
-  --font-size: 16px;
-  --font-weight: 300;
+  box-shadow: 2px 0 4px 4px #ccc;
 }
 
 body {
-  background-color: var(--primary-color);
+  background-color: #fff;
   font-weight: 700;
 }
 
