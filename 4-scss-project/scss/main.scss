@@ -40,5 +40,10 @@ body {
   margin: 0 auto;
   #{&}__paragraph {
     padding: 1rem 0;
+
+    &:hover {
+      color: orange;
+      cursor: pointer;
+    }
   }
 }

@@ -24,5 +24,9 @@ body {
 .main .main__paragraph {
   padding: 1rem 0;
 }
+.main .main__paragraph:hover {
+  color: orange;
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=main.css.map */
