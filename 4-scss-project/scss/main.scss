@@ -5,3 +5,32 @@ $white: #fff;
 html {
   color: $white;
 }
+
+@mixin boxShadow($arg1) {
+  box-shadow: $arg1;
+}
+
+section {
+  @include boxShadow(2px 2px 4px 4px #cccccc);
+}
+
+// Variables: Let's first see CSS variables
+
+:root {
+  --primary-color: #777;
+  --font-size: 16px;
+  --font-weight: 300;
+}
+
+// maps: key value pairs
+
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+);
+
+body {
+  background-color: var(--primary-color);
+  font-weight: map-get($font-weights, bold);
+}
