@@ -16,3 +16,25 @@ body.light {
   background: white;
   color: black;
 }
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.main .main__box1:hover, .main .main__box2:hover {
+  color: green;
+  font-weight: 600;
+}
+
+.main .main__box2 {
+  padding: 1rem;
+  cursor: pointer;
+}

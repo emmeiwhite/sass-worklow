@@ -5,3 +5,14 @@
   background-color: $backgroundColor;
   color: $color;
 }
+
+@mixin flexContainer($flexDirection) {
+  display: flex;
+  flex-direction: $flexDirection;
+}
+
+@mixin mobile() {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}

@@ -10,3 +10,27 @@ body.light {
   background: lighten($backgroundColor, 100%);
   color: darken($color, 100%);
 }
+
+.main {
+  @include flexContainer($row);
+  @include mobile() {
+    // flex-direction: column;
+    @include flexContainer($column);
+  }
+
+  #{&}__box1 {
+    &:hover {
+      color: green;
+      font-weight: 600;
+    }
+  }
+
+  //   Extending box1 properties
+
+  #{&}__box2 {
+    @extend .main__box1;
+    // We have extending the above properties of box1 and we can add our own as well
+    padding: 1rem;
+    cursor: pointer;
+  }
+}
