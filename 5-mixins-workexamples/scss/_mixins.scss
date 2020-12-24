@@ -1,0 +1,7 @@
+@mixin containerWrapper {
+  height: $minHeight;
+  width: $bodyWidth;
+  margin: 0 auto;
+  background-color: $backgroundColor;
+  color: $color;
+}

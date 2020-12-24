@@ -7,6 +7,23 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <div class="testDiv">Here I am. This is me.</div>
+    <div class="testDiv">
+      <h1>Toggle Theme</h1>
+      <button>Click me</button>
+    </div>
+
+    <script>
+      const body = document.querySelector("body");
+      const button = document.querySelector("button");
+      button.addEventListener("click", (e) => {
+        if (e.target.textContent === "Click me") {
+          body.classList.add("light");
+          e.target.innerText = "Toggle";
+        } else {
+          body.classList.remove("light");
+          e.target.innerText = "Click me";
+        }
+      });
+    </script>
   </body>
 </html>

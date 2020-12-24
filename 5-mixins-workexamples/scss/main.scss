@@ -1,4 +1,12 @@
-$test: #ff0000;
+@import "./reset";
+@import "./variables";
+@import "./mixins";
+
 body {
-  color: $test;
+  @include containerWrapper;
+}
+
+body.light {
+  background: lighten($backgroundColor, 100%);
+  color: darken($color, 100%);
 }
