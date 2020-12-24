@@ -21,6 +21,12 @@ html {
   box-shadow: $arg1;
 }
 
+@mixin theme($light-theme: true) {
+  @if $light-theme {
+    background: lighten(#ccc);
+    color: darken(red);
+  }
+}
 section {
   @include boxShadow($boxShadow);
 }
@@ -30,6 +36,7 @@ section {
 body {
   background-color: $mainColor;
   font-weight: weight(bold);
+  color: $btnSecondary;
 }
 
 .main {
@@ -45,5 +52,22 @@ body {
     }
   }
 
-  @include flexCenter(row);
+  @include flexCenter(column);
 }
+
+$testing: testElement;
+
+span #{$testing} {
+  color: $mainColor;
+}
+
+.light {
+  @include theme(true);
+}
+// functions and mixins:
+/* 
+   -functions and mixins are very similar.
+     *functions should be used to compute the value and return them.
+  
+     *mixins are used to define styles
+*/
